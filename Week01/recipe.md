@@ -1,15 +1,16 @@
-# Scrambled Eggs
+# Ramen
 
-Good and tasty eggs.
+Good and tasty Ramen.
 
-- Eggs
-- Salt
-- Pepper
-- Hot sauce
-- Ketchup
+- 1 Shin Ramyun Packet
+- 1 Egg
+- 1 slice American Cheese
+- Kimchi
 
-1. Crack eggs in bowl
-2. Add salt and pepper
-3. Whisk eggs and seasoning together until combined
+1. Bring pot with 2 cups of water to boil
+2. Add
+3. h
+4.
+5.
 
-TODO: Link to an image of eggs
+TODO: Link to an image of ramen
