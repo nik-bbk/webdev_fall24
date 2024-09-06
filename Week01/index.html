@@ -8,99 +8,44 @@
     <!-- viewport tag sets initial scale, ensures proper responsive behavior -->
     <meta name="viewport" content="width=device-width, initial scale=1" />
     <!-- title tag shows in browser tab and big blue link in search results -->
-    <title>HTML Elements 101</title>
-    <!-- This is how we make an internal stylesheet -->
+    <title>Recipe Homework</title>
     <style>
-        p {
-            color: coral;
-        }
+        @font-face { font-family: Century-Schoolbook; src: url('Century-Schoolbook.TTF'); } 
+      h1, p, li {
+         font-family: Century-Schoolbook;
+         color: white;
+      }
 
-        h2,
-        h3,
-        h4 {
-            background-color: #b8596d;
-        }
 
-        a {
-            color: rgb(80, 243, 21);
-            background-color: rgba(0, 0, 0, 0.5);
-        }
     </style>
 </head>
 
-<body>
-
-    Text without markup still shows up. Can't be styled. Should only be used for testing
+<body style="background-color:black;">
     <!-- Only one h1 allowed per page -->
-    <h1 id="top">Heading 1 is the most important text on the page</h1>
-    <h2>As the numbers get bigger, the text gets smaller. So does its weight.</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4. Etc. Goes to h6</h4>
+    <h1>RAMEN</h1>
+    <img src="img/shinRamen.jpg" width="500px" alt="good fluffy eggs" />
+    <p>Good and tasty and spicy and superior ramen!</p>
 
-    <!-- horizontal rule. single self-closing tag -->
-    <hr />
-
-    <!-- misc text will most likely be p(aragraph) tag -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis dictum orci. Praesent sodales, ligula
-        quis egestas semper, augue ante scelerisque urna, vel rhoncus arcu tortor et mi. Nam efficitur, sem id
-        scelerisque gravida, arcu dolor luctus eros, eget placerat magna odio et erat. <br />Praesent maximus vel odio
-        in volutpat. In sodales massa auctor odio congue egestas. Nullam quam velit, luctus sit amet sem non, consequat
-        aliquet elit.
-    <div>Quisque vel pulvinar nunc, sit amet vehicula ipsum.</div>
-    <!-- by default, div displays block -->
-    </p>
-    <p>Donec sit amet ante massa. Proin lacus mauris, ultricies ac malesuada vel, sodales nec mauris. Vivamus est nibh,
-        maximus ac urna et, pretium elementum dolor. Nullam commodo ipsum eget suscipit porta. Donec non sem justo. Ut
-        non dapibus libero, eget sagittis sem. <em>Curabitur nisi</em> tortor, mollis ac sollicitudin sit amet, commodo
-        vitae
-        nunc. Donec vitae suscipit nisi. Donec eu metus lorem. Duis <strong>mollis</strong> sit amet magna et convallis.
-        Nulla facilisi.
-    </p>
-    <p>Vivamus dignissim fermentum orci, et condimentum magna vulputate id. Suspendisse at rhoncus nunc, ut ultricies
-        dolor. Duis eleifend ac arcu non eleifend. Etiam vel aliquam mauris. Donec in pretium justo. Phasellus
-        vestibulum lectus sed aliquam luctus. Vivamus nec nisi vel turpis auctor sollicitudin quis et felis. Duis
-        volutpat posuere odio, iaculis vulputate tellus. Nullam nec nulla elementum, sollicitudin sem et, bibendum est.
-        <span style="color: red; display:block">Integer consequat ultricies est non elementum. Vestibulum quis gravida
-            augue.</span>
-        <!-- Span tags wont do anything visually unless styled with css. WILL SUPERSCEDE ANYTHING FROM A CSS STYLESHEET.
-         So shouldn't use in production. -->
-    </p>
-
-    <h2>Scrambled Eggs</h2>
-    <p>These are good and tasty scrambled eggs!</p>
-    <!-- img hosted on another website -->
-    <img src="https://www.allrecipes.com/thmb/0VXMwCY9RVNrNvWcF_9v0iZpNqA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/JF_241160_CreamyCottageCheeseScrambled_4x3_12902-619d00dc88594ea9b8ed884a108db16d.jpg"
-        width="100px" alt="good eggs" />
-    <!-- img pulled from subfolder -->
-    <img src="img/eggs.jpg" width="100px" alt="good fluffy eggs" />
-
-    <hr />
-    <!-- # as dummy link -->
-    <a href="#">Dummy Link using #</a>
-    <br />
-    <a href="about/about.html">About Page</a>
-    <!-- Link to an element on the same page by ID -->
-    <a href="#top">Back to top</a>
-
-    <!-- Unordered List -->
+    <!-- ingredients -->
     <ul>
-        <li>Ingredient 1</li>
-        <li>Ingredient 2</li>
-        <li>Ingredient 3
-            <ol>
-                <li>hehe Nested list</li>
-                <li>subitem 2</li>
-            </ol>
-        </li>
-        <li>Ingredient 4</li>
+        <li>1 Black Shin Ramyun Packet</li>
+        <li>1 Egg</li>
+        <li>1 slice American Cheese</li>
+        <li>Kimchi</li>
     </ul>
 
-    <!-- Ordered List -->
+    <!-- instructions -->
     <ol>
-        <li>Ingredient 1</li>
-        <li>Ingredient 2</li>
+        <li>Bring pot with 2 cups of water to boil</li>
+        <li>Add ramen seasonings and powder</li>
+        <li>Add ramen noodles and let cook for 5 minutes, stirring occasionally to separate noodles</li>
+        <li>Crack egg into soup and let cook for another 2 minutes or until desired texture</li>
+        <li>Remove soup from heat</li>
+        <li>Add cheese to top</li>
+        <li>Enjoy with kimchi to taste</li>
     </ol>
 
+    <img src="img/ngeEating.gif" alt="two kids and a penguin eat ramen"/>
 
 </body>
 
