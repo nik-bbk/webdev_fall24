@@ -1,0 +1,4 @@
+Wireframing_Reaction
+
+It seems like wireframing is really a business of problem solving. What is most important about a web page is its purpose - the information you most want to convey with that space. Through wireframing, you can make many rough and temporary iterations of a page in order to determine the best way to display that information. I personally work/sketch/think fastest with just a pen and paper, but translating those sketches into some kind of digital layout tool is another layer of revision and refinement to the wireframe process. 
+

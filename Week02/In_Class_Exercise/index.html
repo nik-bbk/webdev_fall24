@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- specify the character set encoding so fonts dont break -->
+    <meta charset="utf-8" />
+    <!-- viewport tag sets initial scale, ensures proper responsive behavior -->
+    <meta name="viewport" content="width=device-width, initial scale=1" />
+    <!-- title tag shows in browser tab and big blue link in search results -->
+    <title>HTML_Form_Notes</title>
+</head>
+
+<body>
+    <h1>Learning about HTML Forms</h1>
+
+    <!-- <a> 'target' _self (is default) is open link in the same tab, _blank is open link in new tab -->
+    <p>Here is a form containing basic input types. <a href="https://www.w3schools.com/html/html_forms.asp"
+            target="_blank"> Check
+            w3schools.</a>
+    </p>
+
+    <!-- action=where to send data from form, maybe its sdfsds.js, or database api -->
+    <!-- method=how we send it. POST to send data elsewhere, GET to get data from API endpoint -->
+    <form action="#" method="POST" name="sampleForm" target="_self">
+        <p>You can put any HTML inside a form element, but you should sitck to images and text that give instructions
+            about how to complete your form.</p>
+        <fieldset>
+            <legend>Simple text input</legend>
+            <p>The box and title of the form group are created by the fieldset and legend tags.</p>
+            <!-- label FOR, input NAME (for database) and ID should all match -->
+            <label for="FirstName">First Name</label>
+            <input type="text" name="FirstName" id="FirstName" required />
+
+            <p>This text input has a character length capped at 15 and placeholder text.</p>
+            <label for="LastName">Last Name</label>
+            <input type="text" name="LastName" placeholder="Smith" maxlength="15" id="LastName" />
+
+
+            <label for="age">Your Age</label>
+            <input type="number" name="age" min="0" max="140" id="age" />
+
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Text Area Tag</legend>
+            <p>TextAreas are for longer text answers. Like sentences or short paragraphs.</p>
+            <label for="whyIDM">Why did you come to IDM>?</label>
+            <textarea name="whyIDM" cols="50" rows="10"></textarea>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Check Boxes</legend>
+            <p>Check boxes allow the user to select more than one option at once.
+                Check boxes all have the same name but different values!!
+            </p>
+            <label for="pet">What pets do you have?</label>
+            <br />
+            <input type="checkbox" name="pet" value="dog" /> Dog
+            <input type="checkbox" name="pet" value="cat" /> Cat
+            <input type="checkbox" name="pet" value="bird" /> Bird
+            <input type="checkbox" name="pet" value="lizard" /> Lizard
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Radio Buttons</legend>
+            <p>Radio fields allow the user to select only one option at once. Radio fields all have the same name but
+                different values.</p>
+            <label for="favorite">Which pet is your favorite?</label>
+            <br />
+            <input type="radio" name="favorite" value="dog" /> Dog
+            <input type="radio" name="favorite" value="cat" /> Cat
+            <input type="radio" name="favorite" value="bird" /> Bird
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Select Options</legend>
+            <p>Using select and option tags, you can add and remove items from a dropdown.</p>
+            <label for="state">Pick a State</label>
+            <select name="state" id="state">
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NY">New York</option>
+                <option value="NM">New Mexico</option>
+            </select>
+        </fieldset>
+
+        <p>Finally, we use a button to submit our form.</p>
+        <input name="submit" value="submit the form" type="button" />
+        <button role="button">Contact Us</button>
+
+
+    </form>
+
+</body>
+
+</html>
