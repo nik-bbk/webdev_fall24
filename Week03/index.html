@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- specify the character set encoding so fonts dont break -->
+    <meta charset="utf-8" />
+    <!-- viewport tag sets initial scale, ensures proper responsive behavior -->
+    <meta name="viewport" content="width=device-width, initial scale=1" />
+    <title>CSS Notes</title>
+
+    <!-- internal style sheet -->
+    <style type="text/css">
+        /* universal selector is commonly used to zero out 
+        the browser default margins and paddint */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* tag selectors aka type or element selectors apply to every instance of that tag on the page */
+        div {
+            background-color: blanchedalmond;
+            font-family: fantasy;
+        }
+
+        p {
+            /* 1rem = 16px */
+            margin-top: 1rem;
+            border: 1px solid red;
+            /* 2rem is top and bottom padding, 1rem is left and right padding */
+            padding: 2rem 1rem;
+
+            color: #7f8cf2;
+            font-family: 'Trebuchet MS' Helvetica, Arial, sans-serif;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        /* pseudo element tag, that only applies to links that have been visited by the browser */
+        a:visited {
+            color: #00ff08;
+        }
+
+        /* class selectors always start with . inside our style sheet */
+        .silly_text {
+            font-family: cursive;
+            text-decoration: wavy underline;
+        }
+
+        /* ID selector */
+        #really_important {
+            font-weight: 600;
+            font-size: x-large;
+            font-style: oblique;
+            line-height: 50px;
+            text-transform: uppercase;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <div>Testing div</div>
+    <p>A p tag to add some spacing. And now <a href="#" class="silly_text">this is a link</a> that seems pretty cool.
+    </p>
+    <p id="really_important">Another fun little p tag but this time with an ID.</p>
+    <div class="silly_text">another div!</div>
+
+</body>
+
+</html>

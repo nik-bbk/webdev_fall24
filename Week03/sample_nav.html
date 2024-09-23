@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navbar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+
+
+
+
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Sofadi One", sans-serif;
+        }
+
+        .navbar {
+            /* remove the bullet points */
+            list-style-type: none;
+            background-color: darkorange;
+
+        }
+
+        li {
+            font-size: x-large;
+            /* LI display: list item; by default. They do not want to stack next to one another
+            even though there is plenty of room to do so. By telling it to display inline, they stack horizontally.
+            The block part allows us to define a heightt, width, margin, and padding.*/
+            display: inline-block;
+            /* zero out the font size when we use inline block to avoid extra calculated space between items */
+            font-size: 0;
+            width: 200px;
+        }
+
+        /* descendant selectors */
+        li a {
+            /* make sure the entire area is clickable, not just the text!!! */
+            display: block;
+            width: 100%;
+            text-align: center;
+            /* padding goes inside the element */
+            padding: 10px;
+            text-decoration: none;
+            color: chartreuse;
+            font-size: x-large;
+        }
+
+        li a.active {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        li a:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#" class="active">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

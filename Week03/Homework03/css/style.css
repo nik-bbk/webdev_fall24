@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Century-Schoolbook;
+    src: url('../Century-Schoolbook.TTF');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* this is how we get a full-sized
+fixed centered background */
+    background: url('../img/ngeBG.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Century-Schoolbook;
+    color: white;
+}
+
+h1 {
+    font-size: 200px;
+}
+
+.witticism {
+    display: inline-block;
+}
+
+header {
+    display: inline;
+}
+
+img {
+    margin-left: 1rem;
+    border-radius: 15px;
+}
+
+aside {
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    margin-right: 4rem;
+    padding: 1rem 2rem 2rem 2rem;
+    /*top right bottom left */
+    background-color: black;
+    border-radius: 15px;
+
+}
+
+aside article {
+    padding-top: 2rem;
+}
+
+ul,
+ol {
+    margin-left: 2rem;
+}
+
+.instructions {
+    margin: 2rem;
+}
