@@ -1,0 +1,96 @@
+/* GLOBAL STYLES */
+* {
+    /* this includes padding and border widths in total width */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Flexbox simple row layouts */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* some styles so we can see our containers */
+    min-height: 400px;
+    border: 1px solid blue;
+    background-color: rgba(111, 146, 228, 0.3);
+}
+
+.item {
+    border: 1px solid orange;
+    background-color: rgba(238, 234, 36, 0.937);
+    width: 23%;
+    height: 200px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-even {
+    justify-content: space-evenly;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.self-start {
+    align-self: flex-start;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.self-stretch {
+    align-self: stretch;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .self-stretch {
+        height: 300px;
+        /* self-stretch, or any stretch flex property wil not override fixed widths */
+        width: auto;
+    }
+}

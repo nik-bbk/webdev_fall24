@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/lindalindalinda.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+
+body ul {
+    list-style: none;
+}
+
+.main-content {
+    background-image: url('../img/border.svg');
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    padding: 2rem 2rem;
+    position: relative;
+    width: 50%;
+    margin: auto;
+
+}
+
+.left-sidebar {
+    position: absolute;
+    left: 1rem;
+}
+
+.right-sidebar {
+    position: absolute;
+    right: 1rem;
+}

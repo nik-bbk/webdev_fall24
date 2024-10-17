@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Modal</title>
+    <style type="text/css">
+        a.button {
+            text-decoration: none;
+            color: white;
+            background-color: blueviolet;
+            padding: 1rem 2rem;
+            border-radius: 0.25rem;
+        }
+
+        /* Modal Styles */
+        .overlay {
+            /* stretch the overlay div to cover the entire screen */
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            /* transparent */
+            background-color: rgba(0, 0, 0, 0.3);
+            /* make sure our modal shows up in front of everything else on screen */
+            z-index: 99;
+            /* starting state opacity of 0% */
+            /* opacity:0%; */
+            /* always define our transiions on the starting state */
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+
+
+        }
+
+        .overlay:target {
+            opacity: 1;
+            /* re-allow all pointer events */
+            pointer-events: auto;
+
+        }
+
+        .overlay>div {
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            position: relative;
+            margin: 10% auto;
+            padding: 2rem;
+
+        }
+
+        .close {
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            color: black;
+            /* position the close button on the top right corner */
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: center;
+            text-decoration: none;
+            transition: all 1s ease;
+
+        }
+
+        .close:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello Modals!</h1>
+    <a href="#info" class="button">Link to Modal 1</a>
+    <a href="#info2" class="button">Link to Modal 2</a>
+
+    <!-- MODAL 1 -->
+    <!-- parent/wrapper div - it recieves the ID, and will be our transparent overlay -->
+    <div id="info" class="overlay"></div>
+    <!-- this child div is the modal box itself -->
+    <div>
+        <!-- close button, absolutely positioned to the top right corner -->
+        <a href="#close" class="close">X</a>
+        <!-- you can put whatever HTML elements you need inside the modal inner div -->
+        <h2>Title of modal1</h2>
+        <p>I AM MODAL NUMBER ONEEEE</p>
+    </div>
+
+
+    <!-- END MODAL 1 -->
+
+
+</body>
+
+</html>
