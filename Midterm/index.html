@@ -7,68 +7,119 @@
     <title>Nikki Babcock</title>
 
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+    <!-- <script src="script.js"></script> -->
+
     <header>
-        <h1>about</h1>
-
+        <div class="header-image">
+            <img src="./img/greenDividerPixel.gif"/>
+        </div>
+        <h1>welcome</h1>
+        
     </header>
+    
+    <div class="BIG-CONTAINER">
 
-    <div class="main-content">
-        <p>salutations my name is Nikki i study computer science and design at NYU welcome to my webbed site</p>
-        <p>i enjoy combining stories and technology</p>
-        <p>some other things i enjoy include</p>
+        <div class="main-content">
+            <div class="welcome-message">
+                <p>salutations my name is <span style="color:rgb(10, 255, 10)">Nikki</span> i study</p>
+                <p>computer science and design at <span style="color:rgb(190, 113, 252)">NYU</span></p>
+                <p id="webbed-site">welcome to my webbed site</p>
+            </div>
+        </div>
 
+
+        <!-- NAVIGATION LEFT SIDE -->
+        <aside class="left-sidebar">
+            <!-- profile photo -->
+            <img src="./img/castleintheskyProfile.jpg" class="profile-pic"/>
+            <h2>NIKKI BABCOCK</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href='index.html' class="welcome-link">welcome.......01</a>
+                    </li>
+                    <li>
+                        <a href='portfolio.html'>portfolio.....02</a>
+                    </li>
+                    <li>
+                        <a href='#'>resume........03</a>
+                    </li>
+                    <li>
+                        <a href='#'>writing.......04</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- TODO: contact buttons -->
+            <div class="contact-buttons">
+                <a href="mailto:nb3483@nyu.edu"><img src="./img/envelope.png"/></a>
+                <a href="https://www.linkedin.com/in/nikki-babcock/" target="_blank"><img src="./img/linkedIn.png"/></a>
+            </div>
+        </aside>
+
+        <!-- DETAILS RIGHT SIDE -->
+        <aside class="right-sidebar">
+            <article class="reading">
+                <p>currently reading:</p>
+                <ul>
+                    <li>
+                        <p><em>omniscient reader's viewpoint</em></p>
+                        <p>&emsp; singnshong</p>
+                    </li>
+                    <li>
+                        <p><em>something wicked this way comes</em></p>
+                        <p>&emsp; ray bradbury</p>
+                    </li>
+                    <li>
+                        <p><em>the book of the new sun</em></p>
+                        <p>&emsp; gene wolf</p>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="listening-to">
+                <p>currently listening to:</p>
+                <ul>
+                    <li>
+                        <p><em>odoriko</em></p>
+                        <p>&emsp; vaundy</p>
+                    </li>
+                    <li>
+                        <p><em>cinderblock garden</em></p>
+                        <p>&emsp; all time low</p>
+                    </li>
+                    <li>
+                        <p><em>girls' generation</em></p>
+                        <p>&emsp; girls' generation</p>
+                    </li>
+                </ul>
+            </article>
+            <p class="advice">//don't panic</p>
+        </aside>
     </div>
-
-    <!-- NAVIGATION LEFT SIDE -->
-    <aside class="left-sidebar">
-        <!-- TODO: profile photo -->
-        <h2>NIKKI BABCOCK</h2>
-        <nav>
-            <ul>
-                <li>
-                    <a href='#'>about 01</a>
-                </li>
-                <li>
-                    <a href='#'>portfolio 02</a>
-                </li>
-                <li>
-                    <a href='#'>resume 03</a>
-                </li>
-                <li>
-                    <a href='#'>writing 04</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- TODO: contact buttons -->
-    </aside>
-
-    <!-- DETAILS RIGHT SIDE -->
-    <aside class="right-sidebar">
-        <article class="reading">
-            <p>currently reading:</p>
-            <ul>
-
-            </ul>
-        </article>
-
-        <article class="listening-to">
-            <p>currently listening to:</p>
-            <ul>
-
-            </ul>
-        </article>
-    </aside>
 
     <footer>
         <!-- gifs -->
+        <div class="gif-container">
+            <img src="./img/greenFire.gif"/>
+            <img src="./img/skeleton.gif"/>
+            <img src="./img/eva.gif"/>
+            <img src="./img/stormtrooper.gif"/>
+            
+        
+        </div>
         <!-- bg image credit -->
+        <p><strong>Background:</strong> <em>The Handmaiden</em> (2016) dir. Park Chan-wook</p>
 
     </footer>
-
-
 </body>
 
 </html>

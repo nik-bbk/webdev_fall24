@@ -1,0 +1,42 @@
+{
+    "editor.tokenColorCustomizations": {
+        "[Eva 01 Theme V2.0]": {
+            //"comments": "#00e5ff"
+            "comments": "#9d9c9c",
+            "textMateRules": [
+                {
+                    "scope": ["variable.other.readwrite.js","variable.other.constant.js"],
+                    "settings": {
+                        "foreground": "#f3bbe6",
+                    }
+                },
+                {
+                    "scope": "variable.other.object.js",
+                    "settings": {
+                        "foreground": "#9ae79a",
+                    }
+                },
+                {
+                    "scope": ["variable.parameter.js", "constant.numeric.decimal.js"],
+                    "settings": {
+                        "foreground": "#ff697f",
+                    }
+                }
+                
+
+
+            ]
+        },
+        "[Eva 02 Theme]": {
+            "comments": "#7dc08b",
+            "textMateRules": [
+                {
+                "scope": "variable.other.readwrite.js",
+                "settings": {
+                    "foreground": "#ffe59c",
+                }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Data Types</title>
+  <script type="text/javascript">
+    //declare a variable
+    var myVar;
+    //assign a value to a variable
+    myVar = 'number';
+    //declare and assign all in one statement
+    var myVar2 = 15;
+
+    console.log(myVar);
+    console.log(typeof myVar);
+
+    var message = 'hello ';
+    var recipient = 'world';
+    console.log(message + recipient); //string concatination
+
+    //sometimes we want to insert a variable inside a longer message to display to a user
+    var temp = 55;
+    console.log('Today\'s temperature is: ' + temp + ' degrees F.');
+    const temp2 = 65;
+
+    //boolean using const keyword, const requires you to assign a value immediately
+    const isOn = true;
+
+    //let is used when a value is going to change based on other conditions
+    //or if we need to declare but not assign a value right away
+    let conditionalMessage;
+
+    //conditional statement
+    if (isOn === true) {
+      conditionalMessage = 'the lights are on!';
+    } else {
+      conditionalMessage = 'the lights are OFF!';
+    }
+
+    //alert(conditionalMessage);
+    const myNum = 80;
+
+    //IN ORDER TO USE ${} YOU HAVE TO USE BACKTICKS (`) NOT QUOTES
+    const anotherMessage = `My favorite number is ${myNum}. So my double favorite number must be ${myNum * 2}`;
+    console.log(anotherMessage);
+
+    //declare and define a function
+    function printMessage() {
+      console.log('Hello World');
+    }
+    printMessage();
+
+    //exact same function but written as an arrow function
+    const printMessage2 = () => {
+      console.log('Hello World!');
+    }
+    printMessage2();
+
+    //declaring a global sum variable
+    let sum;
+    function sumValues(a, b) {
+      sum = a + b;
+      return sum;
+    }
+
+    var newNumber = sumValues(34, 456);
+    console.log(newNumber);
+
+    //booleans and conditionals with a function
+    var isOff = true;
+
+    //function to toggle betwen on and off aka true and false
+    function switchOnOff() {
+      if (isOff === true) {
+        // == checks if isOff is true or 'true' aka, doesn't care about type
+        // === deep equals, this checks that the value AND the TYPE match
+      } else if (isOff === 'true') {
+        alert(`isOff is currently ${isOff}. Switching to true now.`);
+        isOff = true;
+      } else {
+        //nothing in here idk idk you know how to use if elses
+      }
+    }
+
+    function countToN(n) {
+      for (var i = 10; i <= n; i++) {
+        console.log(i);
+      }
+    }
+
+
+
+
+  </script>
+</head>
+
+<body></body>
+
+</html>

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    cursor: url('../img/leagueCursor.png'),auto;
+}
+body {
+    background-color: rgb(13, 32, 46);
+    background-image: url("../img/border.svg");
+    background-repeat: no-repeat;
+    background-size: 90% 95%;
+    background-attachment: fixed;
+    background-position: 50%;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    color: white;
+}
+
+/* all lists on the page have no styling */
+body ul {
+    list-style: none;
+}
+h1{
+    position: fixed;
+    right: 21.4%;
+    top: 1rem;
+    font-weight: 600;
+    font-style: italic;
+}
+h2{
+    font-weight: 600;
+    font-size:larger;
+    font-style: italic;
+}
+a{
+    cursor:url('../img/pointerCursor.png'),auto;
+}
+
+
+/* MAIN PORTFOLIO CONTENT */
+
+.main-content{
+    display:flex;
+    flex-direction: row;
+    width: 70vw;
+    height:100%;
+    padding:1rem;
+    margin-top:1rem;
+    position: absolute;
+    top: 4rem;
+    left: 25%;
+    overflow: auto;
+}
+.left-pieces{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+}
+.right-pieces{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+}
+article img{
+    max-width: 100%;
+}
+
+
+
+
+
+/* NAV SECTION */
+.left-sidebar {
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    position:fixed;
+    left: 3.5rem;
+    top: 7rem;
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: larger;
+}
+.profile-pic{
+    width: 100px;
+    border-style: solid;
+    border-color: white;
+    margin: 1rem;
+}
+/* nav links */
+.left-sidebar nav{
+    align-self: left;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    font-size: x-large;
+}
+.left-sidebar li{
+    padding-bottom: 1rem; /* space out nav links */
+}
+@keyframes colorChange{
+    0%{color:rgb(87, 254, 87);}
+    25%{color:rgb(140, 254, 87);}
+    50%{color:rgb(212, 254, 87);}
+    75%{color:rgb(254, 215, 87);}
+    100%{color:rgb(255, 162, 132);}
+}
+.portfolio-link{
+    animation-name: colorChange;
+    animation-duration:2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.contact-buttons{
+    display: flex;
+    gap: 20px;
+}
+.contact-buttons img{
+    display:inline-block;
+    height:40px;
+    width:auto;
+}
+aside li a {
+    text-decoration: none;
+    color: black;
+}
+aside li a:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

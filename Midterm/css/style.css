@@ -1,42 +1,234 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+html{
+    cursor: url('../img/leagueCursor.png'),auto;
+}
 body {
-    background-image: url('../img/lindalindalinda.jpg');
+    background-image: url("../img/border.svg"), url('../img/The_Handmaiden.jpg');
     background-repeat: no-repeat;
+    background-size: 90% 95%, cover;
     background-attachment: fixed;
-    background-size: cover;
+    background-position: 50%;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
     color: white;
-
 }
 
+/* all lists on the page have no styling */
 body ul {
     list-style: none;
 }
 
+.header-image{
+    position: fixed;
+    top:1.5rem;
+    left: 8%;
+    width: 50vw;
+    height: auto;
+    overflow: hidden;
+    
+}
+h1{
+    position: fixed;
+    right: 23%;
+    top: 1rem;
+    font-weight: 600;
+    font-style: italic;
+}
+h2{
+    font-weight: 600;
+    font-size:larger;
+    font-style: italic;
+}
+a{
+    cursor:url('../img/pointerCursor.png'),auto;
+}
+
 .main-content {
-    background-image: url('../img/border.svg');
-    background-repeat: no-repeat;
-
-    background-size: cover;
-
-    padding: 2rem 2rem;
-    position: relative;
-    width: 50%;
-    margin: auto;
-
-}
-
-.left-sidebar {
     position: absolute;
-    left: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 90%;
+    margin: auto;
+    margin-left: 5%;
+}
+.welcome-message{
+    position: relative;
+    top: 10rem;
+    left: 30%;
+
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: fit-content;
+    
+    font-size: large;
+    font-weight: 400;
+}
+.welcome-message p{
+    padding-bottom: 3px;
+}
+#webbed-site{
+    margin-top: 3rem;
+    align-self: flex-end;
 }
 
+aside li a {
+    text-decoration: none;
+    color: white;
+}
+
+aside li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* NAV SECTION */
+.left-sidebar {
+    /* background-color: black; */
+    border-style: solid;
+    border-color: white;
+    position: absolute;
+    left: 3.5rem;
+    top: 7rem;
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: larger;
+}
+.profile-pic{
+    width: 100px;
+    border-style: solid;
+    border-color: white;
+    margin: 1rem;
+}
+
+/* nav links */
+.left-sidebar nav{
+    align-self: left;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    font-size: x-large;
+}
+.left-sidebar li{
+    padding-bottom: 1rem; /* space out nav links */
+}
+
+@keyframes colorChange{
+    0%{color:rgb(87, 254, 87);}
+    25%{color:rgb(140, 254, 87);}
+    50%{color:rgb(212, 254, 87);}
+    75%{color:rgb(254, 215, 87);}
+    100%{color:rgb(255, 162, 132);}
+}
+.welcome-link{
+    animation-name: colorChange;
+    animation-duration:2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.contact-buttons{
+    display: flex;
+    gap: 20px;
+}
+.contact-buttons img{
+    display:inline-block;
+    height:40px;
+    width:auto;
+}
+
+
+/* FUN FACTS */
 .right-sidebar {
     position: absolute;
-    right: 1rem;
+    right: 3rem;
+    top:7rem;
+    font-size: small;
+}
+.right-sidebar article{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(10, 247, 10);
+    padding:10px 1rem; /*vertical horizontal*/
+}
+.right-sidebar article ul{
+    display: flex;
+    flex-direction: column;
+    padding-left:1rem;
+}
+.right-sidebar li{
+    padding: 4px;
+    align-self: flex-start;
+}
+.listening-to{
+    width:fit-content;
+    margin-top:-10px;
+    margin-left: 1.5rem;
+}
+.advice{
+    writing-mode: vertical-rl;
+    color: rgb(31, 255, 31);
+    position:fixed;
+    right: 3.3%;
+    margin-top:1rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 23px;
+    right: 6%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+
+    font-size: small;
+    font-weight: 200;
+    color: rgb(24, 245, 24);
+}
+.gif-container{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding-bottom: 2px;
+}
+.gif-container img{
+    max-height: 85px;
+    width: auto;
+    padding:2px;
+    background-color: rgb(24, 245, 24);
+}
+
+
+@media only screen and (max-width:768px){
+    h1{
+        font-size: small;
+    }
+    .right-sidebar{
+        display: none;
+    }
+    .left-sidebar{
+        width:25%;
+        height:auto;
+    }
+    .left-sidebar li{
+        font-size: x-small;
+    }
+    .gif-container img{
+        max-height: 45px;
+        width:auto;
+    }
+    .welcome-message{
+        font-size: small;
+
+    }
+
 }
