@@ -9,15 +9,16 @@ html{
 }
 body {
     background-color: rgb(13, 32, 46);
-    background-image: url("../img/border.svg");
+    background-image: url("../img/border.svg"), url("../img/lindalindalinda.jpg");
     background-repeat: no-repeat;
-    background-size: 90% 95%;
+    background-size: 95% 95%, cover;
     background-attachment: fixed;
     background-position: 50%;
 
     font-family: "IBM Plex Mono", monospace;
     font-weight: 100;
     color: white;
+    overflow: hidden;
 }
 
 /* all lists on the page have no styling */
@@ -26,7 +27,7 @@ body ul {
 }
 h1{
     position: fixed;
-    right: 21.4%;
+    right: 20%;
     top: 1rem;
     font-weight: 600;
     font-style: italic;
@@ -42,34 +43,55 @@ a{
 
 
 /* MAIN PORTFOLIO CONTENT */
-
 .main-content{
     display:flex;
     flex-direction: row;
-    width: 70vw;
-    height:100%;
-    padding:1rem;
-    margin-top:1rem;
-    position: absolute;
-    top: 4rem;
+    width: 74vw;
+    height: 85vh;
+    position: fixed;
+    padding: 4px;
+    top: 80px;
     left: 25%;
+    margin-bottom: 10px;
     overflow: auto;
+    scrollbar-width: none;
 }
 .left-pieces{
     width:30%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 .right-pieces{
     width:70%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
+
+.piece{
+    max-width: 96%;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    text-align: right;
+}
+.big-piece{
+    max-width: 96%;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    text-align: right;
+}
+
 article img{
     max-width: 100%;
+    padding:10px;
 }
-
-
+article p{
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 1vw;
+}
 
 
 
@@ -81,12 +103,13 @@ article img{
     left: 3.5rem;
     top: 7rem;
     padding: 1rem 2rem;
+    width:20vw;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    font-size: larger;
+    font-size: 1.5vw;
 }
 .profile-pic{
     width: 100px;
@@ -94,13 +117,23 @@ article img{
     border-color: white;
     margin: 1rem;
 }
+
 /* nav links */
 .left-sidebar nav{
     align-self: left;
     padding-top: 1rem;
     padding-bottom: 5rem;
-    font-size: x-large;
+    font-size: 1.7vw;
 }
+aside li a {
+    text-decoration: none;
+    color: white;
+}
+aside li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
 .left-sidebar li{
     padding-bottom: 1rem; /* space out nav links */
 }
@@ -126,11 +159,55 @@ article img{
     height:40px;
     width:auto;
 }
-aside li a {
-    text-decoration: none;
-    color: black;
+
+
+
+@media only screen and (max-width:1200px){
+    h1{
+        font-size: 2.5vw;
+        top:1.5rem;
+    }
+    .main-content{
+        display:flex;
+        flex-direction: column;
+        width: 74vw;
+        height: 85vh;
+        position: fixed;
+        padding: 4px;
+        top: 80px;
+        left: 30%;
+    }
+    .left-pieces{
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .right-pieces{
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }
-aside li a:visited {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+@media only screen and (max-width:700px){
+    .left-sidebar{
+        left: 1.2rem;
+        width: 25vw;
+        font-size: larger;
+    }
+    .left-sidebar nav{
+        font-size: 2.3vw;
+        padding-bottom: 1rem;
+    }
+    .left-sidebar li{
+        padding-bottom: 2rem; /* space out nav links */
+    }
+
+    .contact-buttons img{
+        height:4vh;
+        width:auto;
+    }
+
 }

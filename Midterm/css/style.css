@@ -26,7 +26,7 @@ body ul {
 
 .header-image{
     position: fixed;
-    top:1.5rem;
+    top:2rem;
     left: 8%;
     width: 50vw;
     height: auto;
@@ -39,6 +39,7 @@ h1{
     top: 1rem;
     font-weight: 600;
     font-style: italic;
+    font-size: 2.5vw;
 }
 h2{
     font-weight: 600;
@@ -59,7 +60,7 @@ a{
 .welcome-message{
     position: relative;
     top: 10rem;
-    left: 30%;
+    left: 25%;
 
     display:flex;
     align-items: flex-start;
@@ -96,12 +97,13 @@ aside li a:visited {
     left: 3.5rem;
     top: 7rem;
     padding: 1rem 2rem;
+    width: 22vw;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    font-size: larger;
+    font-size: 1.5vw;
 }
 .profile-pic{
     width: 100px;
@@ -115,7 +117,8 @@ aside li a:visited {
     align-self: left;
     padding-top: 1rem;
     padding-bottom: 5rem;
-    font-size: x-large;
+
+    font-size: 1.7vw;
 }
 .left-sidebar li{
     padding-bottom: 1rem; /* space out nav links */
@@ -152,6 +155,7 @@ aside li a:visited {
     right: 3rem;
     top:7rem;
     font-size: small;
+    width: 22vw;
 }
 .right-sidebar article{
     border-style: solid;
@@ -208,26 +212,37 @@ footer {
 }
 
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:900px){
     h1{
-        font-size: small;
+       top: 2rem;
     }
     .right-sidebar{
         display: none;
     }
     .left-sidebar{
-        width:25%;
-        height:auto;
+        width: 30vw;
+        font-size: 3vw;
+    }
+    .left-sidebar nav{
+        font-size: 2.3vw;
+        padding-bottom: 1rem;
     }
     .left-sidebar li{
-        font-size: x-small;
+        padding-bottom: 2rem; /* space out nav links */
     }
+
+    .contact-buttons img{
+        height:4vh;
+        width:auto;
+    }
+
     .gif-container img{
         max-height: 45px;
         width:auto;
     }
     .welcome-message{
-        font-size: small;
+        font-size: 2vw;
+        left: 44%;
 
     }
 
